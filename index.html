@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Zaid Alsaied Ahmad</title>
 
   <!--
     - favicon
@@ -150,9 +150,12 @@
             <button class="navbar-link  active" data-nav-link>About</button>
           </li>
 
-          <li class="navbar-item" style="display: none;">
-            <button class="navbar-link" data-nav-link>Resume</button>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>   <a  style="color:inherit" href="assets/Zaid Alsaied Ahmad Resume.pdf">Resume</a>
+            </button>
           </li>
+          
+
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -178,14 +181,18 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            Hi there! Welcome to the portfolio of Zaid Alsaied Ahmad, a skilled and knowledgeable software engineer with a passion for developing top-notch software. With over 3 years of experience under his belt, Zaid has honed his skills in a variety of programming languages and software engineering best practices, making him a valuable asset in any development project.
+
+
+
           </p>
 
           <p>
-            Enthusiastic and well-organized software engineer with 3+ years of experience delivering top-notch software development and troubleshooting. Solid understanding of object-oriented programming, design patterns, software engineering best practices, data structures, algorithms, and great problem-solving skills. Expertise in Java, Spring, AWS, Flutter and React.
+            Zaid's expertise in Java, Spring, AWS, Flutter, and React, combined with his exceptional problem-solving skills, make him a skilled software developer who delivers results. Whether it's through his leadership and mentorship of junior developers or his contributions to code reviews and feedback, Zaid is dedicated to improving both himself and his team. He's always striving to create the best user experiences and deliver seamless software solutions.
+Feel free to browse through Zaid's portfolio to gain insights into his work and experience. If you have any questions or are interested in collaborating, don't hesitate to reach out. Zaid is always open to connecting and sharing his expertise.
           </p>
+
+    
         </section>
 
 
@@ -342,7 +349,7 @@
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Microservices</h4>
                   <p class="service-item-text">
-                    The most modern and high-quality design made at a professional level.
+                    I have extensive experience in Java and the Spring ecosystem, including its framework, libraries and tools. I have developed and deployed microservices using Node.js as well. My expertise in microservice architecture has enabled me to successfully implement numerous microservices for various projects. My hands-on experience has honed my skills in creating scalable and efficient systems.
                   </p>
                 </div>
   
@@ -353,7 +360,7 @@
                   <h4 class="h4 service-item-title">Web development</h4>
   
                   <p class="service-item-text">
-                    High-quality development of sites at the professional level.
+                    With my expertise in the Spring framework and Java, I have a strong foundation in developing RESTful APIs and working on various projects. I have utilized the power of Spring and Java to build robust and scalable systems, leveraging libraries and tools within the ecosystem. My experience has allowed me to bring a new level of efficiency to projects, delivering high-quality results for clients.
                   </p>
                 </div>
   
@@ -365,7 +372,7 @@
                   <h4 class="h4 service-item-title">Mobile apps</h4>
   
                   <p class="service-item-text">
-                    Professional development of applications for iOS and Android.
+                    I have extensive experience in developing cross-platform mobile applications using Fluttere. I have also integrated REST APIs, Firebase, and third-party libraries. My experience includes collaborating with project stakeholders and participating in the complete app development lifecycle.
                   </p>
                 </div>
   
@@ -379,7 +386,7 @@
                   <h4 class="h4 service-item-title">Cloud</h4>
   
                   <p class="service-item-text">
-                    I make high-quality photos of any category at a professional level.
+                    I have extensive experience in utilizing AWS services to build highly available and fault-tolerant systems. My expertise includes load balancing, EC2, SNS, SQS, API Gateway, and ECS. I have effectively employed these tools to implement scalable and efficient solutions for various projects.
                   </p>
                 </div>
   
@@ -900,21 +907,31 @@
         </header>
 
 
-
+        <div class="about-text">
+          <span style="color: var(--orange-yellow-crayola);">this form actually works! </span>
+        </div>
         <section class="contact-form">
+         
 
-
-          <form action="#" class="form" data-form>
+          <form name="contact-form"  class="form" data-form >
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" id="name" class="form-input" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" id="email" class="form-input" placeholder="Email address" required data-form-input>
+       
             </div>
+          
+            <div class="input-wrapper">
+              <input type="text" class="form-input" id="phone" name="phone" class="form-input" placeholder="Phone Number" data-form-input>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <input type="text" class="form-input" id="messageTitle" name="messageTitle" class="form-input" placeholder="Message Title" required data-form-input>
+          
+            </div>
+          
+            <textarea name="message" class="form-input" id="message" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="button" disabled data-form-btn onclick="sendData()">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
@@ -936,7 +953,7 @@
 
   <!--
     - custom js link
-  -->
+  -->I'm Creative Director
   <script src="./assets/js/script.js"></script>
 
   <!--

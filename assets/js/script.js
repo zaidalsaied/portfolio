@@ -5,7 +5,37 @@
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
+function sendData (event){
 
+    console.log("sending data");
+
+    const messageTitle = document.getElementById("messageTitle").value; 
+    const email = document.getElementById("email").value; 
+    const message = document.getElementById("message").value; 
+    const name = document.getElementById("name").value; 
+    const phone = document.getElementById("phone").value; 
+
+    const url="https://5bsqpufly2.execute-api.us-east-1.amazonaws.com/test/contact-form";
+  
+    fetch(url, {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({   
+      "messageTitle":messageTitle,
+    "message":message,
+    "email":email,
+    "name":name,
+    "phone":phone  })
+})
+.then(response => response.json())
+.then(response => console.log(JSON.stringify(response)))
+
+var frm = document.getElementsByName('contact-form')[0];
+frm.reset();
+}
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
