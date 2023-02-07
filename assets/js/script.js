@@ -25,15 +25,24 @@ function sendData(event) {
       name: name,
       phone: phone,
     }),
+  }).then(res=>{
+    const successAlert = document.getElementById("success-alert");
+    successAlert.style.display = "block";
+    var frm = document.getElementsByName("contact-form")[0];
+    frm.reset();
+    setTimeout(() => {
+      successAlert.style.display = "none";
+    }, 5000);
+  }).catch(err=>{
+    const failAlert = document.getElementById("failed-alert");
+    successAlert.style.display = "block";
+    setTimeout(() => {
+      failAlert.style.display = "none";
+    }, 5000);
   });
-  const successAlert = document.getElementById("success-alert");
-  successAlert.style.display = "block";
-  var frm = document.getElementsByName("contact-form")[0];
-  frm.reset();
 
-  setTimeout(() => {
-    successAlert.style.display = "none";
-  }, 5000);
+
+
 }
 
 // sidebar variables
