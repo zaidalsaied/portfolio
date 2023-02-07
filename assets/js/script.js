@@ -30,11 +30,22 @@ function sendData (event){
     "name":name,
     "phone":phone  })
 })
-.then(response => response.json())
-.then(response => console.log(JSON.stringify(response)))
+.then(response => {
 
+}).catch(err=>{
+  console.log("error");
+});
+const successAlert= document.getElementById("success-alert");
+successAlert.style.display="block";
 var frm = document.getElementsByName('contact-form')[0];
 frm.reset();
+
+
+setTimeout(()=>{
+  successAlert.style.display="none";
+}, 5000);
+
+
 }
 
 // sidebar variables

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>AWS Amplify</h2>
+      <h5>Zaid Alsaied Ahmad, Feb 7, 2023</h5>
+      <div class="fakeimg">
+        <img src="./assets/images/0.PNG" alt="">
+        </div>
+      <p>AWS Amplify is a powerful tool for building scalable and secure applications, including static web pages. One of the great benefits of using Amplify is the ability to easily implement CI/CD (Continuous Integration and Continuous Deployment) for your projects. In this blog post, we will cover how to use AWS Amplify with GitHub to achieve this.</p>
+      <p>First, let's understand what CI/CD is. CI/CD is a software engineering practice that allows developers to continuously integrate code changes into a shared repository, and automatically deploy those changes to production environments. This speeds up the development process and reduces the risk of human error.</p>
+    
+        <p>
+            To get started with CI/CD for a static web page using AWS Amplify and GitHub, follow these steps:
+        </p>
+
+        <ol>
+            <li>
+                Create a GitHub repository for your static web page.
+            </li>
+            <li>
+                Sign up for AWS Amplify if you haven’t already.
+            </li>
+            <li>
+                In the AWS Amplify Console, create a new Amplify App. You will need to provide the name of your app, the repository name, and the repository provider (GitHub).
+                <div class="fakeimg">
+                <img src="./assets/images/1.PNG" alt="">
+                </div>
+            </li>
+            <li>
+                Connect your GitHub account to AWS Amplify.
+                <div class="fakeimg">
+                <img src="./assets/images/2.PNG" alt="">
+                </div>
+            </li>
+            <li>
+                Choose the branch that you need to triger the build.
+                <div class="fakeimg">
+                <img src="./assets/images/4.PNG" alt="">
+                </div>
+            </li>
+            <li>
+                Allow AWS Amplify to automatically deploy, make sure you click the checkbox.
+                <div class="fakeimg">
+                <img src="./assets/images/5.PNG" alt="">
+                </div>
+            </li>
+            <li>
+                Build and deploy your website.
+                <div class="fakeimg">
+                <img src="./assets/images/6.PNG" alt="">
+                </div>
+            </li>
+
+            <li>
+             Wait for the build and the deploy.
+                <div class="fakeimg">
+                <img src="./assets/images/7.PNG" alt="">
+                </div>
+            </li>
+            <li>
+                Now you can access the website thorough the url.
+                   <div class="fakeimg">
+                   <img src="./assets/images/8.PNG" alt="">
+                   </div>
+               </li>
+            <li>
+                Now Every time you push changes to your GitHub repository, Amplify will automatically build and deploy your changes to the environment you selected.
+               
+               </li>
+        </ol>
+        <br>
+        <br>
+        <p>
+            And that's it! You have now successfully set up CI/CD for your static web page using AWS Amplify and GitHub. This will allow you to quickly and easily make changes to your static web page and have those changes automatically deployed to production.
+        </p>
+        <br>
+        <br>
+        <p>
+            In conclusion, using AWS Amplify and GitHub for CI/CD can greatly simplify the process of deploying your static web pages. By automating the build and deployment process, you can focus on developing and improving your application, rather than worrying about manual deployment tasks. Give it a try today and see how it can help streamline your workflow.
+        </p>
+    </div>
+    
+  </div>
+
+</div>
+
+
+</body>
+</html>
